@@ -1,0 +1,112 @@
+*::before, *, *::after {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: overpass, sans-serif;
+}
+
+body {
+	background-color: hsl(216, 12%, 8%);
+	min-height: 100vh;
+	display: flex;
+		align-items: center;
+		justify-content: center;
+}
+
+.main-div {
+	background-color: hsl(213, 19%, 18%);
+	padding: 40px;
+	max-width: 450px;
+	border-radius: 30px;
+}
+
+h1 {
+	color: white;
+}
+
+p {
+	color: hsl(217, 12%, 63%);
+	line-height: 25px;
+}
+
+.round-div-wrapper {
+	display: flex;
+		justify-content: space-between;
+}
+
+.round-divs {
+	background-color: hsl(213, 19%, 23%);
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	display: flex;
+		align-items: center;
+		justify-content: center;
+	font-weight: 700;
+}
+
+.round-div-wrapper > .round-divs:hover {
+	background-color: white;
+	cursor: pointer;
+}
+
+.round-divs:hover > p {
+	color: hsl(213, 19%, 18%);
+}
+
+.alert {
+	color: hsl(4, 100%, 67%);
+}
+
+.hidden {
+	display: none;
+}
+
+button {
+	display: block;
+	width: 100%;
+	background-color: hsl(25, 97%, 53%);
+	text-align: center;
+	padding-block: 15px;
+	margin-top: 30px;
+	border-radius: 25px;
+	font-weight: 700;
+	letter-spacing: 4px;
+	border: none;
+}
+
+button:hover {
+	background-color: white;
+	cursor: pointer;
+}
+
+/*Thank You Message*/
+.thank-you-img {
+	display: block;
+	margin-inline: auto;
+}
+
+.rate {
+	background-color: hsl(213, 19%, 23%);
+	border-radius: 25px;
+	color: hsl(25, 97%, 53%);
+	text-align: center;
+	width: fit-content;
+	margin: 40px auto;
+	padding: 8px 16px;
+}
+
+
+/*JS-related codes*/
+.clickedDiv {
+	background-color: hsl(25, 97%, 53%) !important;
+}
+
+.clickedNumber {
+	color: hsl(213, 19%, 18%);
+}
+
+.thank-you-message {
+	text-align: center;
+}
